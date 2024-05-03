@@ -1,7 +1,7 @@
 <nav
     class="
         navigation
-        {{#if in_footer}}
+        {{#if isInFooter}}
             navigation--secondary
             spacing-bottom
         {{/if}}
@@ -26,12 +26,12 @@
                     {{label}}
                 </a>
                 {{#has slug="portfolio"}}
-                    <span class="navigation__tag label label--small label--new">Novo</span>
+                    <span class="navigation__tag label label--small label--warning">Novo</span>
                 {{/has}}
             </li>
         {{/foreach}}
 
-        {{#if in_footer}}
+        {{#if isInFooter}}
             <li class="navigation__item">
                 <a
                     href=""
