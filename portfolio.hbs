@@ -62,11 +62,7 @@
                                 {{else}}
                                     <p>{{excerpt words="30"}}</p>
                                 {{/if}}
-                                    {{#foreach tags}}
-                                        {{#if @last}}
-                                            <a href="{{url}}" class="visit-website-link">Visitar Projeto</a>
-                                        {{/if}}
-                                    {{/foreach}}
+                                    <a href="{{url}}" class="visit-website-link">Visitar Projeto</a>
                             </div>
                         {{/each}}
                     {{else}}
