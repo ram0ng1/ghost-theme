@@ -64,16 +64,10 @@
                                 {{/if}}
                                     {{#foreach tags}}
                                         {{#if @first}}
-                                            <a href="https://{{url}}" class="visit-website-link">Visitar Projeto</a>
+                                            <a href="{{url}}" class="visit-website-link">Visitar Projeto</a>
                                         {{/if}}
                                     {{/foreach}}
                             </div>
-                            <div class="project-image">
-                                {{#if feature_image}}
-                                    <img src="{{img_url feature_image size="s"}}" alt="{{title}}">
-                                {{else}}
-                                    <img src="{{asset "images/placeholder.png"}}" alt="{{title}}">
-                                {{/if}}
                         {{/each}}
                     {{else}}
                     {{/if}}
