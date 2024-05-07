@@ -12,7 +12,7 @@
 }
 
 .cta__label {
-    @include interruption.label("Článek pokračuje níže ↓");
+    @include interruption.label("O Post continua abaixo ↓");
 
     @include breakpoint.up(lg) {
         max-width: container-settings.$narrow-width - 2 * container-settings.$padding-sm;
