@@ -52,6 +52,16 @@
                     </a>
                 </h2>
             {{else}}
+            {{#unless headingLevel}}
+                <h2 class="post-card__title">
+                    <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
+                        {{#has tag="Post"}}
+                            <span class="color-muted">Jukebox /</span>
+                        {{/has}}
+                        {{title}}
+                    </a>
+                </h2>
+            {{else}}            
                 <h{{headingLevel}} class="post-card__title">
                     <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
                         {{#has tag="Dicionário"}}
