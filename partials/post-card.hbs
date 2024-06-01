@@ -47,8 +47,8 @@
                     <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
                         {{#has tag="Dicionário"}}
                             <span class="color-muted">Dicionário /</span>
+                            {{title}}
                         {{/has}}
-                        {{title}}
                     </a>
                 </h2>
             {{else}}
@@ -56,28 +56,8 @@
                     <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
                         {{#has tag="Dicionário"}}
                             <span class="color-muted">Dicionário /</span>
+                            {{title}}
                         {{/has}}
-                        {{title}}
-                    </a>
-                </h{{headingLevel}}>
-            {{/unless}}
-
-            {{#unless headingLevel}}
-                <h2 class="post-card__title">
-                    <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
-                        {{#has tag="JukeBox"}}
-                            <span class="color-muted">Jukebox /</span>
-                        {{/has}}
-                        {{title}}
-                    </a>
-                </h2>
-            {{else}}
-                <h{{headingLevel}} class="post-card__title">
-                    <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
-                        {{#has tag="JukeBox"}}
-                            <span class="color-muted">Jukeboxx /</span>
-                        {{/has}}
-                        {{title}}
                     </a>
                 </h{{headingLevel}}>
             {{/unless}}
