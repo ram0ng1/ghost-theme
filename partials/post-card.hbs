@@ -47,8 +47,11 @@
                     <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
                         {{#has tag="Dicionário"}}
                             <span class="color-muted">Dicionário /</span>
-                            {{title}}
                         {{/has}}
+                        {{#has tag="JukeBox"}}
+                            <span class="color-muted">JukeBox /</span>
+                        {{/has}}                
+                        {{title}}        
                     </a>
                 </h2>
             {{else}}
@@ -56,8 +59,11 @@
                     <a href="{{url}}" class="post-card__expanded-link link-unstyled js-nbsp">
                         {{#has tag="Dicionário"}}
                             <span class="color-muted">Dicionário /</span>
-                            {{title}}
                         {{/has}}
+                        {{#has tag="JukeBox"}}
+                            <span class="color-muted">JukeBox /</span>
+                        {{/has}}
+                        {{title}}
                     </a>
                 </h{{headingLevel}}>
             {{/unless}}
