@@ -51,7 +51,12 @@
                         {{#has tag="JukeBox"}}
                             <span class="color-muted">JukeBox /</span>
                         {{/has}}                
-                        {{title}}        
+                        {{title}}
+                        {{#if featured}}
+                            <span class="post-featured" data-tooltip="Fixado!">
+                                {{> "icons/featured"}}
+                            </span>
+                        {{/if}}
                     </a>
                 </h2>
             {{else}}
@@ -64,6 +69,11 @@
                             <span class="color-muted">JukeBox /</span>
                         {{/has}}
                         {{title}}
+                        {{#if featured}}
+                            <span class="post-featured" data-tooltip="Fixado!">
+                                {{> "icons/featured"}}
+                            </span>
+                        {{/if}}                        
                     </a>
                 </h{{headingLevel}}>
             {{/unless}}
