@@ -1,12 +1,35 @@
 {{!< default}}
 
 <main class="site__content background-alternate">
+
+    <div class="hero-intro-content">
+        <div class="profile-picture">
+            <img src="../content/images/size/w150/2024/05/file.png" alt="Ramon Guilherme" class="profile-picture__image" style="border-radius: 50%;">
+        </div>
+        <h1 class="intro-title text-center heading-large">
+            Olá, me chamo <span>Ramon Guilherme</span> 👋. Estou construindo minha experiência em <span>desenvolvimento</span> e <span>UI Design</span>.
+        </h1>
+        <div class="intro-description text-center">
+            Apresentando meu pequeno espaço elegante, onde compartilho minhas paixões por <b>jogos, música e tecnologia</b>.
+        </div>
+        <div class="cta-wrapper flex justify-center">
+            <a href="#/portal/signup" class="button button--primary button--small">Cadastre-se agora!</a>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="post-feed-icon">
+            <a href="#posts" class="button" style="text-decoration: none;">
+                <span style="font-size: 14px; text-transform: uppercase;">{{> "icons/abaixo"}} </span>
+            </a>
+        </div>
+    </div>
+    
     <section class="section section--dense-top">
         <div class="container container--dense">
 
             <div class="post-feed post-feed--articles">
                 {{#foreach posts visibility="public"}}
-                    <div
+                    <div id="posts"
                         class="
                             post-feed__item
                             {{#if featured}}post-feed__item--featured{{/if}}
