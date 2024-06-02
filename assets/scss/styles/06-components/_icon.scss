@@ -18,3 +18,34 @@
     width: 2em;
     height: 2em;
 }
+
+.post-featured {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.post-featured[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 80%;
+    display: none;
+    padding: 0.25rem 0.5rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 30%;
+    background-color: #00004b;
+    background-color: var(--button-primary-background);
+    opacity: 0.8;
+}
+
+.post-featured[data-tooltip]:hover::before {
+    display: block;
+}
+
+.post-featured svg {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
